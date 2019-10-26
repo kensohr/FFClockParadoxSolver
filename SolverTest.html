@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<script type="text/javascript" src="ClockParadoxSolver.js"></script>
+	</head>
+	<body style="font-family: sans serif;">
+		<h1> Clock Paradox Solver (Final Fantasy XIII-2)</h1>
+		
+		<img align="right" src="http://dl.dropbox.com/u/10649092/FFXIII2_logo.jpg" />
+		
+		<form name="form0">
+			-> [00] <input type="text" name="input0" size="5" onKeyup="GoNextInput(this,form0.input1)">
+			-> [01] <input type="text" name="input1" size="5" onKeyup="GoNextInput(this,form0.input2)">
+			-> [02] <input type="text" name="input2" size="5" onKeyup="GoNextInput(this,form0.input3)">
+			-> [03] <input type="text" name="input3" size="5" onKeyup="GoNextInput(this,form0.input4)">
+			<BR>
+			-> [04] <input type="text" name="input4" size="5" onKeyup="GoNextInput(this,form0.input5)">
+			-> [05] <input type="text" name="input5" size="5" onKeyup="GoNextInput(this,form0.input6)">
+			-> [06] <input type="text" name="input6" size="5" onKeyup="GoNextInput(this,form0.input7)">
+			-> [07] <input type="text" name="input7" size="5" onKeyup="GoNextInput(this,form0.input8)">
+			<BR>
+			-> [08] <input type="text" name="input8" size="5" onKeyup="GoNextInput(this,form0.input9)">
+			-> [09] <input type="text" name="input9" size="5" onKeyup="GoNextInput(this,form0.input10)">
+			-> [10] <input type="text" name="input10" size="5" onKeyup="GoNextInput(this,form0.input11)">
+			-> [11] <input type="text" name="input11" size="5" onKeyup="GoNextInput(this,form0.input12)">
+			<BR>
+			-> [12] <input type="text" name="input12" size="5" onKeyup="GoNextInput(this,form0.input13)">
+			-> [13] <input type="text" name="input13" size="5" onKeyup="GoNextInput(this,form0.input14)">
+			-> [14] <input type="text" name="input14" size="5" onKeyup="GoNextInput(this,form0.input15)">
+			-> [15] <input type="text" name="input15" size="5"">
+			
+			<BR>
+			<BR>
+			
+			<input type="button" value="Solve" onClick="solveParadox()" /> 
+			<input type="button" value="Reset" onClick="resetFields()" />
+			
+			<BR>
+			<BR>
+			
+			<textarea name="output" rows="5" cols="60" size="5"></textarea>
+			
+			<BR>
+			<BR>
+			
+			<input type="button" value="Toggle help text" onClick="displayInputHelp()" />
+			
+			<p id="helpText"></a>
+		</form>
+	</body>
+</html>
